@@ -1,12 +1,11 @@
-import TabButton from "./TabButton";
 
-
-export default function Tabs({children, buttons}) {
+export default function Tabs({ children, buttons, ButtonsContainer = 'menu'}) {
+  // const ButtonsContainer=buttonContainer
   return (
       <>
-           <menu>
+           <ButtonsContainer>
               {buttons}
-          </menu>
+          </ButtonsContainer>
           {children}
       </>
   )
